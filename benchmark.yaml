@@ -1,0 +1,21 @@
+dataset_url: https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz
+model: google-bert/bert-base-multilingual-cased
+labels: [O, SLOT]
+seeds: [13, 29, 43, 61, 89]
+sample_cap_per_label:
+  train: 300
+  dev: 75
+  test: 100
+utterance_pool_size:
+  train: 2000
+  dev: 800
+  test: 1000
+languages:
+  en: {name: English, locale: en-US}
+  hi: {name: Hindi, locale: hi-IN}
+  ur: {name: Urdu, locale: ur-PK}
+  bn: {name: Bangla, locale: bn-BD}
+  ta: {name: Tamil, locale: ta-IN}
+  te: {name: Telugu, locale: te-IN}
+  kn: {name: Kannada, locale: kn-IN}
+  ml: {name: Malayalam, locale: ml-IN}
